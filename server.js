@@ -10,15 +10,15 @@ app.get('/', function (req, res) {
 });
 
 app.get('/article one',function (req,res) {
-    res.send("article one under progress");
+    res.send("article one under process");
 });
 
 app.get('/article two',function (req,res) {
-    res.send("article two under progress");
+    res.send("article two under process");
 });
 
 app.get('/article three',function (req,res) {
-    res.send("article three under progress");
+    res.send("article three under process");
 });
 
 app.get('/ui/style.css', function (req, res) {
