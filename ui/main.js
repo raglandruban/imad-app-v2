@@ -1,6 +1,5 @@
 console.log('Loaded!');
 
-var element = document.getelementById("main-text");
+var element = document.getElementById("main-text");
 
-element.innertHTML = "it's my webapp,RAGLAND";
-
+element.innerHTML = "it's my webapp,RAGLAND";
