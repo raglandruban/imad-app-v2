@@ -12,6 +12,6 @@ var element = document.getElementById("madi");
      marginleft = marginleft + 1;
      img.style.marginleft = marginleft + 'px';
  }
- madi.onclick = function () {
-     var interval = setinterval(moveright, 50);
+ img.onclick = function () {
+     var interval = setInterval(moveright, 50);
  };
