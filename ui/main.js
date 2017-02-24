@@ -5,7 +5,7 @@ var element = document.getElementById("main-text");
 element.innerHTML = "MY WEBAPP,RAGLAND";
 
 
-var element = document.getElementById("madi");
+var img = document.getElementById("madi");
  var marginleft = 0;
  function moveright ()
  {
