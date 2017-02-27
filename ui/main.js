@@ -1,11 +1,21 @@
-console.log('Loaded!');
+//counter code
 
-var element = document.getElementById("main-text");
+var button = document.getElementById('counter');
 
-element.innerHTML = "MY WEBAPP,RAGLAND";
-
-
-var img = document.getElementById("madi");
-img.onclick = function () {
-    img.style.marginleft = '100px';
+button.Onclick = function () {
+    var request = new XMLHttpRequest();
+    
+     requset.onreadystatechange = function () {
+      if (request.readyState === XMLHttpRequest.DONE) 
+      {
+          if (request.status === 200) {
+              var counter = request.responseText;
+              var span = document.getElementById('count');
+              span.innerHTML = counter.toString();
+          }
+      }
+    };
+    
+    request.open('GET','http://raglandruban.imad.hasura_app.io/counter' , true);
+    request.send(null);
 };
