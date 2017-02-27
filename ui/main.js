@@ -1,12 +1,12 @@
 //counter code
 
-var button = document.getElementById("counter");
-var counter = 0;
+var button = document.getElementById("first");
+var first = 0;
 
 button.Onclick = function () {
-    counter  = counter + 1;
+    first = first + 1;
     var span = document.getElementById("count");
-    span.innerHTML = counter.toString();
+    span.innerHTML = first.toString();
 };
 
 
