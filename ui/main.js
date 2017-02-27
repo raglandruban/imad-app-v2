@@ -16,6 +16,6 @@ button.Onclick = function () {
       }
     };
     
-    request.open('GET','http://raglandruban.imad.hasura_app.io/counter' , true);
+    request.open('GET','http://raglandruban.imad.hasura-app.io/counter' , true);
     request.send(null);
 };
