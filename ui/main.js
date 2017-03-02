@@ -3,7 +3,7 @@
 var button = document.getElementById('counter');
 
 
-button.Onclick = function () {
+button.Onclick = function(){
     var request = new XMLHttpRequest();
     
      request.onreadystatechange = function () {
@@ -12,7 +12,7 @@ button.Onclick = function () {
           if (request.status === 200) {
               var counter = request.responseText;
               var span = document.getElementById('count');
-              span.innerHTML = counter.toString();
+              span.innerHTML = counter;
           }
       }
     };
